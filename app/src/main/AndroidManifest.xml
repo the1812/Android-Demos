@@ -34,7 +34,10 @@
       android:label="@string/no_notification_bar" />
     <activity
       android:name=".activities.SendDataActivity"
-      android:label="@string/send_data"/>
+      android:label="@string/send_data" />
+    <activity
+      android:name=".activities.ComponentsActivity"
+      android:label="@string/components"/>
   </application>
 
 </manifest>
