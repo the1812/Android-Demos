@@ -1,0 +1,12 @@
+<resources>
+  <string name="app_name">Android Demo</string>
+  <string name="activities">Activity</string>
+  <string name="no_title">No Title</string>
+  <string name="no_notification_bar">No Notification Bar</string>
+  <string name="toast">Toast</string>
+  <string name="menu_item_1">Menu Item 1</string>
+  <string name="menu_item_2">Menu Item 2</string>
+  <string name="send_data">Send Data</string>
+  <string name="no_data">No Data</string>
+  <string name="receive_data">Receive Data</string>
+</resources>
