@@ -3,6 +3,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   package="com.helloworld.androiddemo">
 
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
@@ -40,7 +41,10 @@
       android:label="@string/components" />
     <activity
       android:name=".fragments.FragmentsActivity"
-      android:label="@string/fragments"/>
+      android:label="@string/fragments" />
+    <activity
+      android:name=".broadcasts.BroadcastsActivity"
+      android:label="@string/broadcasts"/>
   </application>
 
 </manifest>

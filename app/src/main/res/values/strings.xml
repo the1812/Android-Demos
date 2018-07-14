@@ -12,7 +12,6 @@
   <string name="components">Components</string>
   <string name="fragments">Fragments</string>
   <string name="fragment_demo_text">This is a fragment</string>
-
-  <!-- TODO: Remove or change this placeholder text -->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="broadcasts">Broadcasts</string>
+  <string name="broadcasts_hint">Try changing network to see broadcasts!</string>
 </resources>
