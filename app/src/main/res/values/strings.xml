@@ -13,5 +13,6 @@
   <string name="fragments">Fragments</string>
   <string name="fragment_demo_text">This is a fragment</string>
   <string name="broadcasts">Broadcasts</string>
-  <string name="broadcasts_hint">Try changing network to see broadcasts!</string>
+  <string name="broadcasts_hint">Try changing network or hit button to see broadcasts!</string>
+  <string name="send_custom_broadcast">Send Custom Broadcast</string>
 </resources>

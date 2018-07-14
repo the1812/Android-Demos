@@ -12,13 +12,17 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
+    <receiver android:name=".broadcasts.CustomBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.helloworld.androiddemo.CUSTOM_BROADCAST"/>
+      </intent-filter>
+    </receiver>
     <activity
       android:name=".MainActivity"
       android:label="@string/app_name"
       android:launchMode="singleTask">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
-
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
