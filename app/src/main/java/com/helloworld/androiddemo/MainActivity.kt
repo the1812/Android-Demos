@@ -3,7 +3,7 @@ package com.helloworld.androiddemo
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.helloworld.androiddemo.activities.ActivitiesActivity
-import com.helloworld.androiddemo.activities.ComponentsActivity
+import com.helloworld.androiddemo.components.ComponentsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity()

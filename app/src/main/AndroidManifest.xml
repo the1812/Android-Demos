@@ -36,8 +36,11 @@
       android:name=".activities.SendDataActivity"
       android:label="@string/send_data" />
     <activity
-      android:name=".activities.ComponentsActivity"
-      android:label="@string/components"/>
+      android:name=".components.ComponentsActivity"
+      android:label="@string/components" />
+    <activity
+      android:name=".fragments.FragmentsActivity"
+      android:label="@string/fragments"/>
   </application>
 
 </manifest>
