@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.helloworld.androiddemo.ActivityNavigation
 import com.helloworld.androiddemo.R
+import com.helloworld.androiddemo.toast
 import kotlinx.android.synthetic.main.activity_activities.*
 import java.util.*
 
@@ -59,6 +60,4 @@ class ActivitiesActivity : AppCompatActivity()
         }
         navigation.createNavigation()
     }
-    //private fun toast(message: String) = Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    private fun toast(id: Int) = Toast.makeText(this, getString(id), Toast.LENGTH_SHORT).show()
 }

@@ -4,12 +4,13 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
+import com.helloworld.androiddemo.toast
 
 class CustomBroadcastReceiver : BroadcastReceiver()
 {
     override fun onReceive(context: Context?, intent: Intent?)
     {
-        Toast.makeText(context, "Custom broadcast received!", Toast.LENGTH_SHORT).show()
+        context?.toast("Custom broadcast received!")
     }
 
 }

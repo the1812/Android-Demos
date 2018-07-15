@@ -5,13 +5,12 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.helloworld.androiddemo.R
+import com.helloworld.androiddemo.toast
 import kotlinx.android.synthetic.main.activity_files.*
 import java.io.File
 
 class FilesActivity : AppCompatActivity()
 {
-    private fun toast(text: String) = Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
-
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)

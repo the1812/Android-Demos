@@ -54,7 +54,10 @@
       android:label="@string/broadcasts" />
     <activity
       android:name=".files.FilesActivity"
-      android:label="@string/files"/>
+      android:label="@string/files" />
+    <activity
+      android:name=".files.SqlActivity"
+      android:label="@string/sql_lite"/>
   </application>
 
 </manifest>

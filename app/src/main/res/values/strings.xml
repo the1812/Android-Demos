@@ -21,4 +21,5 @@
   <string name="file_hint">Input your data</string>
   <string name="text_file">Text File</string>
   <string name="shard_preferences">Shared Preferences</string>
+  <string name="sql_lite">SQLite</string>
 </resources>
