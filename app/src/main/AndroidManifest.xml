@@ -4,6 +4,7 @@
   package="com.helloworld.androiddemo">
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
   <application
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
@@ -14,15 +15,17 @@
     tools:ignore="GoogleAppIndexingWarning">
     <receiver android:name=".broadcasts.CustomBroadcastReceiver">
       <intent-filter>
-        <action android:name="com.helloworld.androiddemo.CUSTOM_BROADCAST"/>
+        <action android:name="com.helloworld.androiddemo.CUSTOM_BROADCAST" />
       </intent-filter>
     </receiver>
+
     <activity
       android:name=".MainActivity"
       android:label="@string/app_name"
       android:launchMode="singleTask">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
+
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
@@ -48,7 +51,10 @@
       android:label="@string/fragments" />
     <activity
       android:name=".broadcasts.BroadcastsActivity"
-      android:label="@string/broadcasts"/>
+      android:label="@string/broadcasts" />
+    <activity
+      android:name=".files.FilesActivity"
+      android:label="@string/files"/>
   </application>
 
 </manifest>

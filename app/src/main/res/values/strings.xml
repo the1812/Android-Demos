@@ -15,4 +15,10 @@
   <string name="broadcasts">Broadcasts</string>
   <string name="broadcasts_hint">Try changing network or hit button to see broadcasts!</string>
   <string name="send_custom_broadcast">Send Custom Broadcast</string>
+  <string name="files">Storage</string>
+  <string name="read">Read</string>
+  <string name="save">Save</string>
+  <string name="file_hint">Input your data</string>
+  <string name="text_file">Text File</string>
+  <string name="shard_preferences">Shared Preferences</string>
 </resources>
