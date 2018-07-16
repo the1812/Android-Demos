@@ -24,4 +24,12 @@
   <string name="sql_lite">SQLite</string>
   <string name="fill_data">Fill Data</string>
   <string name="delete_all">Delete All</string>
+  <string name="details">Details</string>
+  <string name="new_book">New book</string>
+  <string name="name">Name:</string>
+  <string name="author">Author:</string>
+  <string name="pages">Pages:</string>
+  <string name="price">Price($):</string>
+  <string name="delete">Delete</string>
+  <string name="refresh">Refresh</string>
 </resources>

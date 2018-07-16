@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".files.SqlDetailsActivity">
+
+  <TextView
+    android:id="@+id/textViewName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="@string/name"
+    app:layout_constraintBaseline_toBaselineOf="@+id/textName"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+    android:id="@+id/textName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:inputType="text"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/textViewName"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/textViewAuthor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="@string/author"
+    app:layout_constraintBaseline_toBaselineOf="@+id/textAuthor"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+    android:id="@+id/textAuthor"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:inputType="text"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/textViewAuthor"
+    app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+  <TextView
+    android:id="@+id/textViewPages"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="@string/pages"
+    app:layout_constraintBaseline_toBaselineOf="@+id/textPages"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+    android:id="@+id/textPages"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/textViewPages"
+    app:layout_constraintTop_toBottomOf="@+id/textAuthor" />
+
+  <TextView
+    android:id="@+id/textViewPrice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="@string/price"
+    app:layout_constraintBaseline_toBaselineOf="@+id/textPrice"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+    android:id="@+id/textPrice"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/textViewPrice"
+    app:layout_constraintTop_toBottomOf="@+id/textPages" />
+
+  <Button
+    android:id="@+id/buttonDelete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/delete"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/buttonSave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/save"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

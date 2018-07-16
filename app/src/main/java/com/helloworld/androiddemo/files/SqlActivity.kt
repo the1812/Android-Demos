@@ -1,6 +1,7 @@
 package com.helloworld.androiddemo.files
 
 import android.content.ContentValues
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -10,10 +11,10 @@ import android.widget.ArrayAdapter
 import com.helloworld.androiddemo.R
 import kotlinx.android.synthetic.main.activity_sql.*
 
+public const val tableName = "Book"
+public const val databaseName = "demo_database"
 class SqlActivity : AppCompatActivity()
 {
-    private val tableName = "Book"
-    private val databaseName = "demo_database"
     private val databaseHelper = SqlDatabase(this, databaseName, null, 1)
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -37,6 +38,9 @@ class SqlActivity : AppCompatActivity()
             }
             readDatabase()
         }
+        buttonRefresh.setOnClickListener {
+            readDatabase()
+        }
     }
 
     private fun readDatabase()
@@ -51,7 +55,7 @@ class SqlActivity : AppCompatActivity()
         else
         {
             buttonFill.visibility = View.GONE
-            val list = mutableListOf<Book>()
+            val map = mutableMapOf<Book, Int>()
             cursor.moveToFirst()
             do
             {
@@ -59,11 +63,18 @@ class SqlActivity : AppCompatActivity()
                 val author = cursor.getString(cursor.getColumnIndex(Book::author.name))
                 val pages = cursor.getInt(cursor.getColumnIndex(Book::pages.name))
                 val price = cursor.getDouble(cursor.getColumnIndex(Book::price.name))
-                list.add(Book(name, author, pages, price))
+                map[Book(name, author, pages, price)] = cursor.getInt(cursor.getColumnIndex("id"))
             }
             while (cursor.moveToNext())
-            val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list.map { it.name })
+            val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, map.map { it.key.name })
             root_list.adapter = adapter
+            root_list.setOnItemClickListener { _, _, i, _ ->
+                val book = map.keys.elementAt(i)
+                val intent = Intent(this, SqlDetailsActivity::class.java)
+                intent.putExtra("book", book)
+                intent.putExtra("id", map[book])
+                startActivity(intent)
+            }
         }
         cursor.close()
     }
