@@ -57,7 +57,8 @@
       android:label="@string/files" />
     <activity
       android:name=".files.SqlActivity"
-      android:label="@string/sql_lite"/>
+      android:label="@string/sql_lite"
+      android:launchMode="singleTask"/>
   </application>
 
 </manifest>

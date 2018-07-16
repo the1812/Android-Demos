@@ -6,4 +6,31 @@
   android:layout_height="match_parent"
   tools:context=".files.SqlActivity">
 
+  <ListView
+    android:id="@+id/root_list"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/buttonFill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="13dp"
+    android:layout_marginBottom="8dp"
+    android:text="@string/fill_data"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

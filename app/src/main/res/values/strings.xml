@@ -22,4 +22,6 @@
   <string name="text_file">Text File</string>
   <string name="shard_preferences">Shared Preferences</string>
   <string name="sql_lite">SQLite</string>
+  <string name="fill_data">Fill Data</string>
+  <string name="delete_all">Delete All</string>
 </resources>

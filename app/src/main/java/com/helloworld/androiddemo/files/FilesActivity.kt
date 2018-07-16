@@ -1,6 +1,7 @@
 package com.helloworld.androiddemo.files
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -41,6 +42,9 @@ class FilesActivity : AppCompatActivity()
             {
                 toast("Read preference from \"$preferenceKey\"")
             }
+        }
+        buttonSqlite.setOnClickListener {
+            startActivity(Intent(this, SqlActivity::class.java))
         }
     }
 
