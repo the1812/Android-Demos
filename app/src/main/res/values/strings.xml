@@ -36,4 +36,6 @@
   <string name="send_notification">Send Notification</string>
   <string name="remove_notification">Remove Notification</string>
   <string name="update_notification">Update Notification</string>
+  <string name="messages">Messages</string>
+  <string name="message_hint">Try sending some messages to this phone!</string>
 </resources>

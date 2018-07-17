@@ -22,8 +22,8 @@ class MessageReceiver : BroadcastReceiver()
             val text = messages
                     .map { it.messageBody }
                     .reduce { acc, s -> acc + s }
-            message = Pair(sender, text)
+            onNewMessage(sender, text)
         }
     }
-    public var message: Pair<String, String> = Pair("", "")
+    public var onNewMessage: (String, String) -> Unit = { _, _ -> }
 }

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.helloworld.androiddemo.activities.ActivitiesActivity
 import com.helloworld.androiddemo.broadcasts.BroadcastsActivity
+import com.helloworld.androiddemo.broadcasts.MessageActivity
 import com.helloworld.androiddemo.components.ComponentsActivity
 import com.helloworld.androiddemo.files.FilesActivity
 import com.helloworld.androiddemo.notifications.NotificationsActivity
@@ -26,7 +27,8 @@ class MainActivity : AppCompatActivity()
             getString(R.string.components) to ComponentsActivity::class.java,
             getString(R.string.broadcasts) to BroadcastsActivity::class.java,
             getString(R.string.files) to FilesActivity::class.java,
-            getString(R.string.notifications) to NotificationsActivity::class.java
+            getString(R.string.notifications) to NotificationsActivity::class.java,
+            getString(R.string.messages) to MessageActivity::class.java
         )
         navigation.createNavigation()
     }

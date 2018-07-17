@@ -4,6 +4,9 @@
   package="com.helloworld.androiddemo">
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_SMS" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
   <application
     android:allowBackup="false"
@@ -64,7 +67,10 @@
       android:label="@string/details" />
     <activity
       android:name=".notifications.NotificationsActivity"
-      android:label="@string/notifications"/>
+      android:label="@string/notifications" />
+    <activity
+      android:name=".broadcasts.MessageActivity"
+      android:label="@string/messages"/>
   </application>
 
 </manifest>
