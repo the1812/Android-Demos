@@ -32,4 +32,8 @@
   <string name="price">Price($):</string>
   <string name="delete">Delete</string>
   <string name="refresh">Refresh</string>
+  <string name="notifications">Notifications</string>
+  <string name="send_notification">Send Notification</string>
+  <string name="remove_notification">Remove Notification</string>
+  <string name="update_notification">Update Notification</string>
 </resources>

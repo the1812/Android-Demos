@@ -6,6 +6,7 @@ import com.helloworld.androiddemo.activities.ActivitiesActivity
 import com.helloworld.androiddemo.broadcasts.BroadcastsActivity
 import com.helloworld.androiddemo.components.ComponentsActivity
 import com.helloworld.androiddemo.files.FilesActivity
+import com.helloworld.androiddemo.notifications.NotificationsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity()
@@ -24,7 +25,8 @@ class MainActivity : AppCompatActivity()
             getString(R.string.activities) to ActivitiesActivity::class.java,
             getString(R.string.components) to ComponentsActivity::class.java,
             getString(R.string.broadcasts) to BroadcastsActivity::class.java,
-            getString(R.string.files) to FilesActivity::class.java
+            getString(R.string.files) to FilesActivity::class.java,
+            getString(R.string.notifications) to NotificationsActivity::class.java
         )
         navigation.createNavigation()
     }

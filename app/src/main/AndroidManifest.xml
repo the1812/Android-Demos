@@ -62,6 +62,9 @@
     <activity
       android:name=".files.SqlDetailsActivity"
       android:label="@string/details" />
+    <activity
+      android:name=".notifications.NotificationsActivity"
+      android:label="@string/notifications"/>
   </application>
 
 </manifest>
