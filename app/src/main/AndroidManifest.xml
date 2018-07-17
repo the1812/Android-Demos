@@ -7,6 +7,9 @@
   <uses-permission android:name="android.permission.WRITE_SMS" />
   <uses-permission android:name="android.permission.READ_SMS" />
   <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
   <application
     android:allowBackup="false"
@@ -16,6 +19,15 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
+    <provider
+      android:name="android.support.v4.content.FileProvider"
+      android:authorities="com.helloworld.androiddemo.FileProvider"
+      android:grantUriPermissions="true"
+      android:exported="false">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+    </provider>
     <receiver android:name=".broadcasts.CustomBroadcastReceiver">
       <intent-filter>
         <action android:name="com.helloworld.androiddemo.CUSTOM_BROADCAST" />
@@ -70,7 +82,10 @@
       android:label="@string/notifications" />
     <activity
       android:name=".broadcasts.MessageActivity"
-      android:label="@string/messages"/>
+      android:label="@string/messages" />
+    <activity
+      android:name=".photos.PhotosActivity"
+      android:label="@string/photos"/>
   </application>
 
 </manifest>

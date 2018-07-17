@@ -39,4 +39,7 @@
   <string name="messages">Messages</string>
   <string name="message_hint">Try sending some messages to this phone!</string>
   <string name="block_system_message">Block system notification</string>
+  <string name="photos">Photos</string>
+  <string name="camera">Camera</string>
+  <string name="album">Album</string>
 </resources>
