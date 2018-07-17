@@ -41,5 +41,8 @@
   <string name="block_system_message">Block system notification</string>
   <string name="photos">Photos</string>
   <string name="camera">Camera</string>
-  <string name="album">Album</string>
+  <string name="album">Gallery</string>
+  <string name="multithreading">Multithreading</string>
+  <string name="multithreading_hint">Show dialog after 5 sec.</string>
+  <string name="start">Start</string>
 </resources>
