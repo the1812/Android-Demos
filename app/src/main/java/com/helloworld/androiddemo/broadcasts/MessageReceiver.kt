@@ -23,7 +23,12 @@ class MessageReceiver : BroadcastReceiver()
                     .map { it.messageBody }
                     .reduce { acc, s -> acc + s }
             onNewMessage(sender, text)
+            if (blockMessage)
+            {
+                abortBroadcast()
+            }
         }
     }
     public var onNewMessage: (String, String) -> Unit = { _, _ -> }
+    public var blockMessage = false
 }

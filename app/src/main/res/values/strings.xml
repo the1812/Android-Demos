@@ -38,4 +38,5 @@
   <string name="update_notification">Update Notification</string>
   <string name="messages">Messages</string>
   <string name="message_hint">Try sending some messages to this phone!</string>
+  <string name="block_system_message">Block system notification</string>
 </resources>

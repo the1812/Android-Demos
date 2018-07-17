@@ -28,6 +28,9 @@ class MessageActivity : AppCompatActivity()
                 textContent.text = content
                 toast("New message arrived.")
             }
+            checkBoxBlock.setOnCheckedChangeListener { _, _ ->
+                messageReceiver.blockMessage = checkBoxBlock.isChecked
+            }
         }
     }
 
