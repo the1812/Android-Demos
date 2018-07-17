@@ -20,6 +20,7 @@ class PhotosActivity : AppCompatActivity()
     private lateinit var permissions: Permissions
     private val fileName = "photo.jpg"
     private val camera = 1
+    private val album = 2
     private var cameraUri = Uri.EMPTY
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -44,15 +45,27 @@ class PhotosActivity : AppCompatActivity()
                 startActivityForResult(intent, camera)
             }
         }
+        buttonAlbum.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image/*"
+            startActivityForResult(Intent.createChooser(intent, "Choose an image"), album)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
     {
-        when (requestCode)
+        if (resultCode == Activity.RESULT_OK)
         {
-            camera -> {
-                if (resultCode == Activity.RESULT_OK) {
+            when (requestCode)
+            {
+                camera ->
+                {
                     val bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(cameraUri))
+                    imageView.setImageBitmap(bitmap)
+                }
+                album ->
+                {
+                    val bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(data?.data))
                     imageView.setImageBitmap(bitmap)
                 }
             }
