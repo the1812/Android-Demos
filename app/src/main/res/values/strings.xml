@@ -45,4 +45,6 @@
   <string name="multithreading">Multithreading</string>
   <string name="multithreading_hint">Show dialog after 5 sec.</string>
   <string name="start">Start</string>
+  <string name="service">Service</string>
+  <string name="service_hint">Calculate 1+2+…+100 using service after 5 sec.</string>
 </resources>
