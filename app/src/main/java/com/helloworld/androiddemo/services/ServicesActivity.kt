@@ -6,7 +6,9 @@ import android.content.Intent
 import android.content.ServiceConnection
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.os.IBinder
+import android.os.Messenger
 import com.helloworld.androiddemo.R
 import com.helloworld.androiddemo.toast
 import kotlinx.android.synthetic.main.activity_services.*
@@ -47,6 +49,13 @@ class ServicesActivity : AppCompatActivity()
                     unbindService(connection)
                 }
             }
+        }
+        buttonStartIntent.setOnClickListener {
+            val intent = Intent(this, DemoIntentService::class.java)
+            intent.putExtra("messenger", Messenger(Handler { message ->
+                toast(message.data.getString("text"))
+                true }))
+            startService(intent)
         }
     }
 }

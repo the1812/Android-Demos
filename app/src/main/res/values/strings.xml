@@ -47,4 +47,6 @@
   <string name="start">Start</string>
   <string name="service">Service</string>
   <string name="service_hint">Calculate 1+2+…+100 using service after 5 sec.</string>
+  <string name="start_normal_service">Start normal service</string>
+  <string name="start_intent_service">Start intent service</string>
 </resources>

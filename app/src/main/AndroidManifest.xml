@@ -95,7 +95,10 @@
       android:name=".services.DemoService"
       android:enabled="true"
       android:exported="true" />
-
+    <service
+      android:name=".services.DemoIntentService"
+      android:enabled="true"
+      android:exported="true" />
     <activity
       android:name=".services.ServicesActivity"
       android:label="@string/service"/>
