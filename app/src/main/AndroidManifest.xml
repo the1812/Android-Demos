@@ -10,7 +10,7 @@
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.INTERNET" />
 
   <application
     android:allowBackup="false"
@@ -106,7 +106,10 @@
       android:label="@string/service" />
     <activity
       android:name=".web.WebViewActivity"
-      android:label="@string/web_view"/>
+      android:label="@string/web_view" />
+    <activity
+      android:name=".web.WebDataActivity"
+      android:label="@string/web_data"/>
   </application>
 
 </manifest>

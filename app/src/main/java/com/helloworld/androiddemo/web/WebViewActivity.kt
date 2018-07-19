@@ -2,6 +2,7 @@ package com.helloworld.androiddemo.web
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_web_view.*
 class WebViewActivity : AppCompatActivity()
 {
     private lateinit var permissions: Permissions
+    private var url = ""
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -32,13 +34,21 @@ class WebViewActivity : AppCompatActivity()
             {
                 override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean
                 {
-                    view?.loadUrl(request?.url.toString())
+                    url = request?.url.toString()
+                    textAddress.setText(url)
+                    view?.loadUrl(url)
                     return true
                 }
             }
             textAddress.setOnEditorActionListener { _, _, _ ->
-                webView.loadUrl(textAddress.text.toString())
+                url = textAddress.text.toString()
+                webView.loadUrl(url)
                 true
+            }
+            buttonRaw.setOnClickListener {
+                val intent = Intent(this, WebDataActivity::class.java)
+                intent.putExtra("url", url)
+                startActivity(intent)
             }
         }
     }
