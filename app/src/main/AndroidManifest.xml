@@ -10,6 +10,7 @@
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
 
   <application
     android:allowBackup="false"
@@ -99,9 +100,13 @@
       android:name=".services.DemoIntentService"
       android:enabled="true"
       android:exported="true" />
+
     <activity
       android:name=".services.ServicesActivity"
-      android:label="@string/service"/>
+      android:label="@string/service" />
+    <activity
+      android:name=".web.WebViewActivity"
+      android:label="@string/web_view"/>
   </application>
 
 </manifest>

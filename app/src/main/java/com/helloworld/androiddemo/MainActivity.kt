@@ -11,6 +11,7 @@ import com.helloworld.androiddemo.notifications.NotificationsActivity
 import com.helloworld.androiddemo.photos.PhotosActivity
 import com.helloworld.androiddemo.services.MultithreadingActivity
 import com.helloworld.androiddemo.services.ServicesActivity
+import com.helloworld.androiddemo.web.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity()
@@ -34,7 +35,8 @@ class MainActivity : AppCompatActivity()
             getString(R.string.messages) to MessageActivity::class.java,
             getString(R.string.photos) to PhotosActivity::class.java,
             getString(R.string.multithreading) to MultithreadingActivity::class.java,
-            getString(R.string.service) to ServicesActivity::class.java
+            getString(R.string.service) to ServicesActivity::class.java,
+            getString(R.string.web_view) to WebViewActivity::class.java
         )
         navigation.createNavigation()
     }

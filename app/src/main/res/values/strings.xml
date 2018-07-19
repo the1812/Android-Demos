@@ -49,4 +49,6 @@
   <string name="service_hint">Calculate 1+2+…+100 using service after 5 sec.</string>
   <string name="start_normal_service">Start normal service</string>
   <string name="start_intent_service">Start intent service</string>
+  <string name="web_view">WebView</string>
+  <string name="web_view_hint">Input website…</string>
 </resources>
