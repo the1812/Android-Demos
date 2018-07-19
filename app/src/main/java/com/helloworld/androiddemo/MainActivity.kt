@@ -7,6 +7,7 @@ import com.helloworld.androiddemo.broadcasts.BroadcastsActivity
 import com.helloworld.androiddemo.broadcasts.MessageActivity
 import com.helloworld.androiddemo.components.ComponentsActivity
 import com.helloworld.androiddemo.files.FilesActivity
+import com.helloworld.androiddemo.location.LocationActivity
 import com.helloworld.androiddemo.notifications.NotificationsActivity
 import com.helloworld.androiddemo.photos.PhotosActivity
 import com.helloworld.androiddemo.services.MultithreadingActivity
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity()
             getString(R.string.photos) to PhotosActivity::class.java,
             getString(R.string.multithreading) to MultithreadingActivity::class.java,
             getString(R.string.service) to ServicesActivity::class.java,
-            getString(R.string.web_view) to WebViewActivity::class.java
+            getString(R.string.web_view) to WebViewActivity::class.java,
+            getString(R.string.location) to LocationActivity::class.java
         )
         navigation.createNavigation()
     }

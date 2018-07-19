@@ -52,4 +52,7 @@
   <string name="web_view">WebView</string>
   <string name="web_view_hint">Input website…</string>
   <string name="web_data">Raw Data</string>
+  <string name="location">Location</string>
+  <string name="location_provider">Location Provider:</string>
+  <string name="get_location">Refresh Location</string>
 </resources>
